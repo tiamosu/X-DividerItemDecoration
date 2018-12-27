@@ -19,7 +19,8 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation project(':y_divideritemdecoration')
+//    implementation project(':y_divideritemdecoration')
+    implementation "me.xia:x-divideritemdecoration:1.0.0"
 
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
     implementation 'androidx.recyclerview:recyclerview:1.1.0-alpha01'
