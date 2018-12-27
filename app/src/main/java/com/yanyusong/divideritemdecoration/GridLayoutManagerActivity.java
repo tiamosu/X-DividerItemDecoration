@@ -2,10 +2,6 @@ package com.yanyusong.divideritemdecoration;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 
 import com.yanyusong.divideritemdecoration.y_recycleradapter.GeneralRecyclerViewHolder;
 import com.yanyusong.divideritemdecoration.y_recycleradapter.Y_ItemEntityList;
@@ -18,10 +14,14 @@ import com.yanyusong.y_divideritemdecoration.Y_DividerItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 /**
  * Created by mac on 2017/4/6.
  */
-
 public class GridLayoutManagerActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;

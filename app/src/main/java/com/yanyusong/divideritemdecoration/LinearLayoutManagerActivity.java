@@ -2,10 +2,6 @@ package com.yanyusong.divideritemdecoration;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 
 import com.yanyusong.divideritemdecoration.y_recycleradapter.GeneralRecyclerViewHolder;
 import com.yanyusong.divideritemdecoration.y_recycleradapter.Y_ItemEntityList;
@@ -18,10 +14,14 @@ import com.yanyusong.y_divideritemdecoration.Y_DividerItemDecoration;
 import java.util.ArrayList;
 import java.util.List;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 /**
  * Created by mac on 2017/4/6.
  */
-
 public class LinearLayoutManagerActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
@@ -32,7 +32,7 @@ public class LinearLayoutManagerActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recyclerview);
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        recyclerView = findViewById(R.id.recyclerview);
 
         List<String> items = new ArrayList<>();
 
@@ -52,9 +52,7 @@ public class LinearLayoutManagerActivity extends AppCompatActivity {
         recyclerView.addItemDecoration(new DividerItemDecoration(this));
 
         recyclerView.setAdapter(new Y_MultiRecyclerAdapter(this, itemEntityList));
-
     }
-
 
     class DividerItemDecoration extends Y_DividerItemDecoration {
 

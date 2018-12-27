@@ -1,9 +1,10 @@
 package com.yanyusong.divideritemdecoration.y_recycleradapter;
 
-import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 /**
  * Created by mac on 15/12/19.
