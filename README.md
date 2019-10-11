@@ -4,7 +4,7 @@
 ### x-divideritemdecoration
 [ ![Download](https://api.bintray.com/packages/weixia/maven/x-divideritemdecoration/images/download.svg) ](https://bintray.com/weixia/maven/x-divideritemdecoration/_latestVersion)
 ```groovy
-compile 'me.xia:x-divideritemdecoration:1.0.0'
+implementation 'me.xia:x-divideritemdecoration:1.0.0'
 ```
 
 ## 感谢原作者的贡献
